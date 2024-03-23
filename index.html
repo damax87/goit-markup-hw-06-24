@@ -355,7 +355,7 @@
             <strong class="follow-title">SUBSCRIBE TO THE NEWSLETTER</strong>
             <form class="subscribe-form">
                 <label for="user-email">
-                  <input id="user-email" class="email-input" type="email" name="email" placeholder="E-mail" />
+                  <input id="user-email" class="email-input" type="email" name="email" placeholder="E-mail" required />
                 </label>
                 <button class="subscribe-button" type="submit">Subscribe
                     <svg class="send-icon" width="24" height="24">
@@ -366,6 +366,7 @@
         </div>
     </div>
     </footer>
+<!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="close-button">
@@ -373,6 +374,39 @@
                     <use href="./images/icons.svg#closeIcon"></use>
                 </svg>
             </button>
+            <p class="modal-title">Leave your details, we will call you back</p>
+            <form class="client-form" name="client-form">
+                <label class="label-title">
+                  Name
+                <input class="form-input" type="text" name="name" required />
+                <svg class="new-client-icon" width="12" height="12">
+                    <use href="./images/icons.svg#clientNameIcon"></use>
+                </svg>
+                </label>
+                <label class="label-title">
+                  Phone number  
+                <input class="form-input" type="tel" name="phone" required />
+                <svg class="new-client-icon" width="13" height="13">
+                    <use href="./images/icons.svg#clientPhoneIcon"></use>
+                </svg>
+                </label>
+                <label class="label-title">
+                  Email
+                <input class="form-input" type="email" name="email" required />
+                <svg class="new-client-icon" width="15" height="12">
+                    <use href="./images/icons.svg#clientMailIcon"></use>
+                </svg>
+                </label>
+                <label class="label-title">
+                  Message
+                <textarea class="form-message" name="message" placeholder="Enter your message here..."></textarea>
+                </label>
+                <label class="input-checkbox">
+                <input type="checkbox" name="checkbox" value="checkbox" checked />
+                I agree and accept<a href=""><span class="text-agreement">The terms of the agreement</span></a>
+                  </label>
+                <button class="input-button" type="submit">Submit</button>
+              </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
